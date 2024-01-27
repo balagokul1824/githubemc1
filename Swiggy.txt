@@ -1,0 +1,986 @@
+// wajp to using switch statm program 
+import java.util.Scanner;
+class swiggys{
+		static Scanner sc=new Scanner(System.in);
+		public static void main(String[]args)throws Exception{
+			System.out.println("\t\t\tWelecome to Swiggy");
+			System.out.println("1.Veg Food\n2.Non-Veg Food\n3.Anything is Fine");
+			int user_dish=sc.nextInt();
+			switch (user_dish){
+			case 1:{//veg food
+					System.out.println("\t\t\twelecome to  hotel Veg Food");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("\t\t\tSelect the dish");
+					System.out.println("1.Veg fried Rice\n2.veg Briyani\n3.Mushroom biryani");
+					int dish=sc.nextInt();
+	switch (dish){
+	case 1:{//Veg fried Rice
+				   double per_plate=200;
+					System.out.println("\t\t\tSelect the quantity");
+					int gty=sc.nextInt();
+					double total_bill=gty*per_plate;
+					System.out.println("The bills amount is:"+total_bill);//
+					System.out.println("\t\t\tSelect the payment Mode");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Google-pay\n2.Phone-Pay");
+					int payment=sc.nextInt();
+switch (payment){
+case 1:{//google-pay
+			          System.out.println("please enter the bill amount:"+total_bill);
+					  double user_entered_bill=sc.nextDouble();
+					   if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tProceesing unitil wait............");//
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						 else
+							 System.out.println("\t\t\t Otp is mis matching Order failed");}	
+						 else
+							System.out.println("Payment failed"); 
+break;}
+case 2:{//phone-pay 
+						System.out.println("please enter the bill amount:"+total_bill);
+						double user_entered_bill=sc.nextDouble();
+						if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						 else
+							 System.out.println("\t\t\t Otp is mis matching Order failed");}	
+						 else
+							System.out.println("Payment failed");
+break;}
+}
+break;}
+	case 2:{//veg Briyani
+				   double per_plate=210;
+					System.out.println("\t\t\tSelect the quantity");
+					int gty=sc.nextInt();
+					double total_bill=gty*per_plate;
+					System.out.println("\t\t\tSelect the payment Mode");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Google-pay\n2.Phone-Pay");
+					int payment=sc.nextInt();
+switch (payment){
+case 1:{//google-pay 
+						System.out.println("please enter the bill amount:"+total_bill);
+						double user_entered_bill=sc.nextDouble();
+						if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						 else
+							 System.out.println("\t\t\t Otp is mis matching Order failed");}	
+						 else
+							System.out.println("Payment failed");
+break;}
+case 2:{//phone-pay
+						System.out.println("please enter the bill amount:"+total_bill);
+						double user_entered_bill=sc.nextDouble();
+						if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						 else
+							 System.out.println("\t\t\t Otp is mis matching Order failed");}	
+						 else
+							System.out.println("Payment failed");
+break;}
+}
+break;}
+	case 3:{//Mushroom biryani
+				    double per_plate=180;
+					System.out.println("\t\t\tSelect the quantity");
+					int gty=sc.nextInt();
+					double total_bill=gty*per_plate;
+					System.out.println("\t\t\tSelect the payment Mode");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Google-pay\n2.Phone-Pay");
+					int payment=sc.nextInt();
+switch (payment){
+case 1:{//google-pay
+						System.out.println("please enter the bill amount:"+total_bill);
+						double user_entered_bill=sc.nextDouble();
+						if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						 else
+							 System.out.println("\t\t\t Otp is mis matching Order failed");}	
+						 else
+							System.out.println("Payment failed");
+break;}
+case 2:{//phone-pay
+						System.out.println("please enter the bill amount:"+total_bill);
+						double user_entered_bill=sc.nextDouble();
+						if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						 else
+							 System.out.println("\t\t\t Otp is mis matching Order failed");}	
+						 else
+							System.out.println("Payment failed");
+break;}
+}
+break;}
+	}System.out.println("\t\t\tThankyou  for choosing veg food hotel Have a Nice Day......");
+						break;}
+			case 2:{//non veg food
+					System.out.println("\t\t\twelecome to  hotel  non Veg Food");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("\t\t\tSelect the dish");
+					System.out.println("1.hyderabadi biryani\n2.Ambur birayani\n3.kolkata biryani");
+					int dish=sc.nextInt();
+switch (dish)
+{
+case 1:{//hyderabadi biryani
+			double per_plate=380;
+					System.out.println("\t\t\tSelect the quantity");
+					int gty=sc.nextInt();
+					double total_bill=gty*per_plate;
+					System.out.println("\t\t\tSelect the payment Mode");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Google-pay\n2.Phone-Pay");
+					int payment=sc.nextInt();
+switch (payment)
+{
+case 1:{//google-pay 
+				       System.out.println("please enter the bill amount:"+total_bill);
+						double user_entered_bill=sc.nextDouble();
+						 if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						else
+					    System.out.println("\t\t\totp is miss matching Order failed");}	
+					    else
+					  System.out.println("Payment failed");
+break;}
+case 2:{//phone-pay
+						System.out.println("please enter the bill amount:"+total_bill);
+						double user_entered_bill=sc.nextDouble();
+						 if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						else
+					    System.out.println("\t\t\totp is miss matching Order failed");}	
+					    else
+					  System.out.println("Payment failed");
+ break;}
+}
+break;}
+case 2:{//Ambur birayani
+			double per_plate=380;
+					System.out.println("\t\t\tSelect the quantity");
+					int gty=sc.nextInt();
+					double total_bill=gty*per_plate;
+					System.out.println("\t\t\tSelect the payment Mode");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Google-pay\n2.Phone-Pay");
+					int payment=sc.nextInt();
+switch (payment)
+{
+case 1:{//google-pay
+						System.out.println("please enter the bill amount:"+total_bill);
+						double user_entered_bill=sc.nextDouble();
+						 if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						else
+					    System.out.println("\t\t\totp is miss matching Order failed");}	
+					    else
+					  System.out.println("Payment failed");  
+break;}
+case 2:{//phone-pay
+						System.out.println("please enter the bill amount:"+total_bill);
+						double user_entered_bill=sc.nextDouble();
+						 if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						else
+					    System.out.println("\t\t\totp is miss matching Order failed");}	
+					    else
+					  System.out.println("Payment failed");
+ break;}
+}
+break;}
+case 3:{//kolkata biryani
+					double per_plate=380;
+					System.out.println("\t\t\tSelect the quantity");
+					int gty=sc.nextInt();
+					double total_bill=gty*per_plate;
+					System.out.println("\t\t\tSelect the payment Mode");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Google-pay\n2.Phone-Pay");
+					int payment=sc.nextInt();
+switch (payment)
+{
+case 1:{//google-pay
+						System.out.println("please enter the bill amount:"+total_bill);
+						double user_entered_bill=sc.nextDouble();
+						 if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						else
+					    System.out.println("\t\t\totp is miss matching Order failed");}	
+					    else
+					  System.out.println("Payment failed");
+ break;}
+case 2:{//phone-pay
+			          System.out.println("please enter the bill amount:"+total_bill);
+						double user_entered_bill=sc.nextDouble();
+						 if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						else
+					    System.out.println("\t\t\totp is miss matching Order failed");}	
+					    else
+					  System.out.println("Payment failed");
+ break;}
+}
+break;}
+}	System.out.println("\t\t\tThankyou  for choosing non veg food  Have a Nice Day......");
+						break;}
+			case 3:{//Anything is Fine
+					System.out.println("\t\t\tSelect the hotel");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Buhari\n2.Eats-of-Arab\n3.A2B\n4.Amma Canteen");
+					int hotel=sc.nextInt();
+					switch (hotel){
+			case 1:{//Buhari 
+		         	System.out.println("\t\t\tThanking for selecting hotel buhari...!");
+					System.out.println("\t\t\tSelect the dish");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Mutton biryani\n2.chinken 65\n3.chinken biryani");
+					int dish=sc.nextInt();
+			switch (dish){
+			case 1:{//mutton biryani
+					double per_plate=380;
+					System.out.println("\t\t\tSelect the quantity");
+					int gty=sc.nextInt();
+					double total_bill=gty*per_plate;
+					System.out.println("\t\t\tSelect the payment Mode");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Google-pay\n2.Phone-Pay");
+					int payment=sc.nextInt();
+			switch (payment){
+			case 1:{//Google-pay
+						System.out.println("please enter the bill amount:"+total_bill);
+						double user_entered_bill=sc.nextDouble();
+						 if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						else
+					    System.out.println("\t\t\totp is miss matching Order failed");}	
+					    else
+					  System.out.println("Payment failed");
+			break;}
+			case 2:{//Phone-Pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						 else
+							 System.out.println("\t\t\t Otp is mis matching Order failed");}	
+						 else
+							System.out.println("Payment failed");
+			break;}
+				}
+			break;}
+			case 2:{// chinken 65
+					double per_plate=200;
+					System.out.println("\t\t\tSelect the quantity");
+					int gty=sc.nextInt();
+					double total_bill=gty*per_plate;
+					System.out.println("\t\t\tSelect the payment Mode");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Google-pay\n2.Phone-Pay");
+					int payment=sc.nextInt();
+			switch (payment){
+			case 1:{//google-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					 if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+							System.out.println("\t\t\tProcessing.......");	
+							Thread.sleep(3000); 
+							System.out.println("\t\t\tOrder succesfully Received....");	}
+							 else
+								 System.out.println("\t\t\totp is miss matching Order failed");}	
+							    else
+								System.out.println("Payment failed");
+			break;}
+			case 2:{//phone-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						 else
+							 System.out.println("\t\t\t Otp is mis matching Order failed");}	
+						 else
+							System.out.println("Payment failed");
+			     break;}
+			}
+				break;}
+				case 3:{// chinken biryani
+						double per_plate=250;
+						System.out.println("\t\t\tSelect the quantity");
+						int gty=sc.nextInt();
+						double total_bill=gty*per_plate;
+						System.out.println("\t\t\tSelect the payment Mode");
+						System.out.println("\t\t\tProceesing.....");
+						Thread.sleep(1000);	
+						System.out.println("1.Google-pay\n2.Phone-Pay");
+						int payment=sc.nextInt();
+			switch (payment){
+			case 1:{//google-pay
+						System.out.println("please enter the bill amount:"+total_bill);
+					    double user_entered_bill=sc.nextDouble();
+					    if ( user_entered_bill==total_bill){
+						int sys_otp=(int)(Math.random()*9999+9999);
+						System.out.println("\t\t\tEnter the OTP");
+						Thread.sleep(3000); 
+						System.out.println(sys_otp);
+						int user_entered_otp=sc.nextInt();
+						if (sys_otp==user_entered_otp){
+						System.out.println("\t\t\tProcessing.......");	
+						Thread.sleep(3000); 
+						System.out.println("\t\t\tOrder succesfully Received....");	}
+						else
+						System.out.println("\t\t\totp is miss matching Order failed");}	
+						 else
+						System.out.println("Payment failed");
+			break;}
+		case 2:{//phone-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+				    else
+					 System.out.println("\t\t\t Otp is mis matching Order failed");}	
+					 else
+					System.out.println("Payment failed");
+		break;}
+			}
+	break;}
+		}System.out.println("\t\t\tThankyou for choosing hotel Buhari Have a Nice Day......");
+		break;}
+	case 2:{//Eats-of-Arab
+			System.out.println("\t\t\tThanking for selecting hotel Eats-of Arab...!");
+			System.out.println("\t\t\tSelect the dish");
+			System.out.println("\t\t\tProceesing.....");
+			Thread.sleep(1000);	
+			System.out.println("1.Arabian Chops\n2.Chinken Tandoori Tikka 6 pcs\n3.Chinken Sweet corn Soup");
+			int dish=sc.nextInt();
+			switch (dish)
+			{
+			case 1:{//Arabian Chops
+					double per_plate=400;
+					System.out.println("\t\t\tSelect the quantity");
+					int gty=sc.nextInt();
+					double total_bill=gty*per_plate;
+					System.out.println("\t\t\tSelect the payment Mode");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Google-pay\n2.Phone-Pay");
+					int payment=sc.nextInt();
+			switch (payment)
+			{
+			case 1:{//google-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					 else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					 else
+					System.out.println("Payment failed");
+				break;}
+			case 2:{//phone-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+				    else
+					 System.out.println("\t\t\t Otp is mis matching Order failed");}	
+					 else
+					System.out.println("Payment failed");
+					break;}
+			
+			}
+			break;}
+			case 2:{//Chinken Tandoori Tikka 6 pcs
+					double per_plate=500;
+					System.out.println("\t\t\tSelect the quantity");
+					int gty=sc.nextInt();
+					double total_bill=gty*per_plate;
+					System.out.println("\t\t\tSelect the payment Mode");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Google-pay\n2.Phone-Pay");
+					int payment=sc.nextInt();
+			switch (payment)
+			{
+			case 1:{//google-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					 if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+			break;}
+			case 2:{//phone-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					 else
+					System.out.println("Payment failed");
+		break;}	
+		}
+		break;}
+		case 3:{//Chinken Sweet corn Soup
+					double per_plate=500;
+					System.out.println("\t\t\tSelect the quantity");
+					int gty=sc.nextInt();
+					double total_bill=gty*per_plate;
+					System.out.println("\t\t\tSelect the payment Mode");
+					System.out.println("\t\t\tProceesing.....");
+					Thread.sleep(1000);	
+					System.out.println("1.Google-pay\n2.Phone-Pay");
+					int payment=sc.nextInt();
+			switch (payment)
+			{
+			case 1:{// google-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+			break;}
+			case 2:{//phone-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+			break;}
+			}
+				break;}
+			}	System.out.println("\t\t\tThankyou  for choosing hotel Eats-of-Arab Have a Nice Day......");
+	break;}
+	case 3:{//A2B
+			System.out.println("\t\t\tThanking for selecting hotel A2B...!");
+			System.out.println("\t\t\tSelect the dish");
+			System.out.println("\t\t\tProceesing.....");
+			Thread.sleep(1000);	
+			System.out.println("1.Onion Rava Masala Dosa\n2.Poori Masala\n3.Idyappam kuruma");
+			int dish=sc.nextInt();
+			switch (dish)
+			{
+	case 1:{//Onion Rava Masala Dosa
+			double per_plate=150;
+			System.out.println("\t\t\tSelect the quantity");
+			int gty=sc.nextInt();
+			double total_bill=gty*per_plate;
+			System.out.println("\t\t\tSelect the payment Mode");
+			System.out.println("\t\t\tProceesing.....");
+			Thread.sleep(1000);	
+			System.out.println("1.Google-pay\n2.Phone-Pay");
+			int payment=sc.nextInt();
+switch (payment)
+{
+case 1:{//google-pay
+			        System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+break;}
+case 2:{//phone-pay
+			        System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+break;}
+
+}	
+	break;}
+	case 2:{//Poori Masala
+			double per_plate=120;
+			System.out.println("\t\t\tSelect the quantity");
+			int gty=sc.nextInt();
+			double total_bill=gty*per_plate;
+			System.out.println("\t\t\tSelect the payment Mode");
+			System.out.println("\t\t\tProceesing.....");
+			Thread.sleep(1000);	
+			System.out.println("1.Google-pay\n2.Phone-Pay");
+			int payment=sc.nextInt();
+	switch (payment)
+	{
+	case 1:{//google-pay
+				   System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+	break;}
+	case 2:{//phone-pay
+				    System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+break;}
+	
+	}
+    break;}
+	case 3:{//Idyappam kuruma
+			double per_plate=100;
+			System.out.println("\t\t\tSelect the quantity");
+			int gty=sc.nextInt();
+			double total_bill=gty*per_plate;
+			System.out.println("\t\t\tSelect the payment Mode");
+			System.out.println("\t\t\tProceesing.....");
+			Thread.sleep(1000);	
+			System.out.println("1.Google-pay\n2.Phone-Pay");
+			int payment=sc.nextInt();
+ switch (payment)
+{
+case 1:{//google-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+break;}
+case 2:{//phone-pay
+		            System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+break;}
+}	
+break;}			
+	}	System.out.println("\t\t\tThankyou  for choosing hotel A2B Have a Nice Day......");
+	break;}
+case 4:{//Amma Canteen
+			System.out.println("\t\t\tThanking for selecting Amma canteen...!");
+			System.out.println("\t\t\tSelect the dish");
+			System.out.println("\t\t\tProceesing.....");
+			Thread.sleep(1000);	
+			System.out.println("1.Curd Rice\n2.Sambar Rice\n3.Chapati");
+			int dish=sc.nextInt();
+	switch (dish)
+	{
+	case 1:{// Curd rice
+			double per_plate=25;
+			System.out.println("\t\t\tSelect the quantity");
+			int gty=sc.nextInt();
+			double total_bill=gty*per_plate;
+			System.out.println("\t\t\tSelect the payment Mode");
+			System.out.println("\t\t\tProceesing.....");
+			Thread.sleep(1000);	
+			System.out.println("1.Google-pay\n2.Phone-Pay");
+			int payment=sc.nextInt();
+switch (payment)
+{
+case 1:{ // google-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+break;}
+case 2:{ //phone-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+break;}
+
+}
+break;}
+	case 2:{//Sambar rice
+			double per_plate=35;
+			System.out.println("\t\t\tSelect the quantity");
+			int gty=sc.nextInt();
+			double total_bill=gty*per_plate;
+			System.out.println("\t\t\tSelect the payment Mode");
+			System.out.println("\t\t\tProceesing.....");
+			Thread.sleep(1000);	
+			System.out.println("1.Google-pay\n2.Phone-Pay");
+			int payment=sc.nextInt();
+switch (payment)
+{
+case 1:{// google-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+break;}
+case 2:{//phone-pay
+			        System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+break;}
+
+}
+break;}
+	case 3:{//chapati
+			double per_plate=50;
+			System.out.println("\t\t\tSelect the quantity");
+			int gty=sc.nextInt();
+			double total_bill=gty*per_plate;
+			System.out.println("\t\t\tSelect the payment Mode");
+			System.out.println("\t\t\tProceesing.....");
+			Thread.sleep(1000);	
+			System.out.println("1.Google-pay\n2.Phone-Pay");
+			int payment=sc.nextInt();
+switch (payment)
+{
+case 1:{// google-pay
+					System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+break;}
+case 2:{ //phone-pay
+				    System.out.println("please enter the bill amount:"+total_bill);
+					double user_entered_bill=sc.nextDouble();
+					if ( user_entered_bill==total_bill){
+					int sys_otp=(int)(Math.random()*9999+9999);
+					System.out.println("\t\t\tEnter the OTP");
+					Thread.sleep(3000); 
+					System.out.println(sys_otp);
+					int user_entered_otp=sc.nextInt();
+					if (sys_otp==user_entered_otp){
+					System.out.println("\t\t\tProcessing.......");	
+					Thread.sleep(3000); 
+					System.out.println("\t\t\tOrder succesfully Received....");	}
+					else
+					System.out.println("\t\t\totp is miss matching Order failed");}	
+					else
+					System.out.println("Payment failed");
+break;}
+}
+break;}
+	}	System.out.println("\t\t\tThankyou  for choosing Amma Canteen Have a Nice Day......");
+break;}				
+				}
+				break;}
+			}
+		}
+}
